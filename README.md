@@ -90,11 +90,11 @@ El objetivo es encontrar los **valores que no tumban el servicio** pero sí gene
 
 ### Resultados obtenidos
 
-| Servicio | Host:Puerto | Workers límite | RPS límite | Duración | Timeout |
-|----------|-------------|---------------|-----------|----------|---------|
-| Frontend | localhost:3000 | *[completar después de pruebas]* | *[completar]* | 30s | 5.0s |
-| Backend | localhost:5000 | *[completar después de pruebas]* | *[completar]* | 30s | 5.0s |
-| LDAP API | localhost:8000 | *[completar después de pruebas]* | *[completar]* | 30s | 5.0s |
+| Servicio | Host:Puerto | Workers límite (`-c`) | RPS límite (`-r`) | Duración | Timeout |
+|----------|-------------|-----------------------|-------------------|----------|---------|
+| Frontend | localhost:3000 | 150 | 500 | 15s | 2.0s |
+| Backend  | localhost:5000 | 150 | 500 | 15s | 2.0s |
+| LDAP API | localhost:8000 | 100 | 300 | 15s | 2.0s |
 
 > **Nota:** Los valores exactos se completan después de ejecutar las pruebas reales con los contenedores corriendo.
 
